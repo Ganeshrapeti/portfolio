@@ -21,7 +21,7 @@ import { Component } from '@angular/core';
 export class TechStackComponent {
   skills = [
     { title: 'Core Angular Concepts', description: 'Proficient in components, modules, directives, and services.',
-      img:'/assets/tech/ang-icon.png'
+      img:'assets/tech/ang-icon.png'
      },
     { title: 'TypeScript & JavaScript', description: 'Strong knowledge of TypeScript, JavaScript, HTML, and CSS.',
       img:'assets/tech/js-ts.png'

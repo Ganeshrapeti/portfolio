@@ -43,9 +43,7 @@
 //   }
   
   
-.btn-global {
-margin: 0rem 3rem;
-}
+
   .btn-global:hover {
     color: white;
     box-shadow: inset 500px 0 0 0 var(--themeBGDark) !important;
@@ -106,4 +104,10 @@ margin: 0rem 3rem;
   }
   .text-danger {
     color: rgb(245, 189, 189) !important;
+  }
+
+  @media (min-width: 800px) {
+  .btn-global {
+    margin: 0rem 0rem 0 7.5rem;
+    }
   }
