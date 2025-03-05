@@ -1,0 +1,108 @@
+<section class="about-section">
+    <h2>About Me</h2>
+    <div class="row content mt-3">
+<div class="col-12 col-lg-3 sec-one">
+  <div class="heading" (click)="changeTab(li.no)" *ngFor="let li of list">
+    <h3 >{{li.name}}</h3>
+  </div>
+</div>
+<div class="col-12 col-lg-9 mt-3">
+@if (tabIndex == 0) {
+  <div class="secTwo">
+    <ul>
+    <li>
+      Experienced Angular Developer with 3 years of expertise in building dynamic and scalable web applications.
+      Specializing in warehouse management and supply chain domains, I am proficient in Angular, TypeScript,
+      JavaScript, HTML, and CSS, with hands-on experience in integrating RESTful APIs and managing state using RxJS.
+    </li>
+    <li>
+      I excel in creating user-friendly interfaces with Angular Material and Bootstrap, implementing performance
+      optimizations like lazy loading and Ahead-of-Time (AOT) compilation. My expertise extends to version control
+      with Git and deploying applications using Docker and Azure-based cloud platforms.
+    </li>
+    <li>
+      Passionate about writing clean, maintainable code, I collaborate with cross-functional teams to streamline
+      operational efficiency and ensure seamless user experiences. Constantly learning, I stay updated on modern
+      frontend technologies to deliver cutting-edge solutions.
+    </li>
+    </ul>
+  </div>
+}
+@if (tabIndex == 1) {
+
+  <div class="secTwo">
+      <div class="experience">
+        <h5>iBWMS Product, Intelizest Consultancy Pvt Ltd</h5>
+        <p><small>September 2023 - Present</small></p>
+        <ul>
+          <li>Designed and developed intuitive dashboards for tracking inventory, orders, and warehouse operations using Angular.</li>
+          <li>Developed secure role-based access systems to manage permissions for warehouse staff and administrators.</li>
+          <li>Integrated RESTful APIs for syncing warehouse operations with ERP and shopfloor systems.</li>
+          <li>Improved performance by optimizing API calls and implementing debouncing techniques in forms.</li>
+        </ul>
+      </div>
+    
+      <div class="experience">
+        <h5>Expanzs Product, Intelizest Consultancy Pvt Ltd</h5>
+        <p><small>April 2023 - August 2023</small></p>
+        <ul>
+          <li>Designed and developed Home page, implemented auth guard, and navigation.</li>
+          <li>Enhanced website responsiveness to ensure seamless performance across all devices and screen sizes.</li>
+          <li>Developed and implemented a two-month calendar feature for booking pages using PrimeNG, ensuring smooth date selection and improved user experience.</li>
+        </ul>
+      </div>
+    
+      <div class="experience">
+        <h5>Rekochain Product, Intelizest Consultancy Pvt Ltd</h5>
+        <p><small>March 2022 - August 2023</small></p>
+        <ul>
+          <li>Built responsive UI components for various screen sizes.</li>
+          <li>Created dynamic dashboards for company, user, buyer, and vendor, enhancing real-time performance.</li>
+          <li>Coordinated testing and validation, ensuring compliance with industry standards.</li>
+        </ul>
+      </div>
+  </div>
+}
+@if (tabIndex == 2) {
+  <div class="secTwo">
+    <div class="education">
+      <h5>M.Tech in Thermal Engineering</h5>
+      <p><strong>Sep 2019 - Dec 2021</strong> | JNTUK University of College of Engineering Vizianagaram</p>
+      <p>CGPA: 7.78</p>
+    </div>
+  
+    <div class="education">
+      <h5>B.E in Mechanical Engineering</h5>
+      <p><strong>July 2015 - May 2018</strong> | Welfare Institute of Science Technology and Management</p>
+      <p>CGPA: 7.8</p>
+    </div>
+  </div>
+}
+@if (tabIndex == 3) {
+  <div class="secTwo">
+    <p class="award">
+    Appreciation of <strong>Purple award</strong>  for valuable contribution to the growth of the company during the year
+ 2023.
+    </p>
+    
+  </div>
+}
+@if (tabIndex == 4) {
+  <div class="secTwo">
+    <div class="additional-info">
+      <h5>Languages</h5>
+      <p>English, Telugu, Hindi</p>
+    </div>
+    <div class="additional-info">
+      <h5>Strengths</h5>
+      <p>Responsible, Problem Solving Skills, Quick Adaptability, and Efficient Communication</p>
+    </div>
+    <div class="additional-info">
+      <h5>Hobbies</h5>
+      <p>Learning new Technologies, Playing Cricket, and Travelling</p>
+    </div>
+  </div>
+}
+</div>
+</div>
+  </section>

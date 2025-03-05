@@ -1,0 +1,109 @@
+.contact-section {
+    text-align: center;
+    padding: 1rem 3rem 3rem 3rem;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  .form {
+    padding: 2rem;
+    background: var(--bgGreenLight);
+    border-radius: 10px;
+    // text-align: left;
+    border: 1px solid var(--themeBGSecondary)
+  }
+  
+//   mat-form-field {
+//     display: block;
+//     width: 100%;
+//     margin-bottom: 1rem;
+//   }
+//   mat-form-field.custom-theme {
+//     ::ng-deep .mdc-text-field {
+//       --mdc-outlined-text-field-outline-color: #ffff;
+//       --mdc-outlined-text-field-hover-outline-color: yellow;
+//       --mdc-outlined-text-field-focus-outline-color: pink;
+//       --mdc-outlined-text-field-label-text-color: #ffff;
+//       --mdc-text-field-ink-color: #ffff;
+//       --mdc-text-field-ink-color: green;
+//       --mdc-text-field-caret-color: green;
+
+//     //   --mdc-text-field-label-floating-color: #ff9800;
+//     // --mdc-text-field-input-text-color: #ff9800;
+
+//     --mdc-floating-label--float-above: #fff;
+//     --mdc-text-field__input: #fff;
+//     .mat-mdc-form-field .mdc-text-field--outlined .mdc-notched-outline--upgraded .mdc-floating-label--float-above {
+//         color: white;
+//     }
+//     mdc-text-field--outlined:not(.mdc-text-field--disabled) .mdc-text-field__input {
+//         color: white;
+//         caret-color: white;
+//     }
+//     }
+//   }
+  
+  
+.btn-global {
+margin: 0rem 3rem;
+}
+  .btn-global:hover {
+    color: white;
+    box-shadow: inset 500px 0 0 0 var(--themeBGDark) !important;
+  }
+
+
+  .contact-section {
+    text-align: center;
+    padding: 1rem;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .card {
+    background: var(--bgGreenLight);
+    border-radius: 15px;
+    // box-shadow: 0 4px 10px var(--themeBGSecondary);
+    padding: 1rem 2rem 2rem 2rem;
+    border: 1px solid var(--themeBGSecondary)
+  }
+  
+  .form-control {
+    border: 2px solid var(--themeBGSecondary);
+    padding: 10px;
+    color: var(--themeBGLight);
+    background-color: transparent;
+  }
+  
+  .form-control:focus {
+    border-color: var(--themeBGDark);
+    box-shadow: 0 0 5px var(--themeBGLight);
+    color: var(--themeBGLight);
+
+  }
+  .form-control::placeholder {
+    color: rgba(255, 255, 255, 0.514) !important;
+    opacity: 1;
+  }
+  
+  .field-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .form-label {
+    min-width: 80px;
+    color: var(--themeBGLight);
+  }
+  
+  button {
+    font-weight: bold;
+    padding: 10px;
+  }
+  
+  .bi {
+    font-size: 1.2rem;
+    color: var(--themeBGLight);
+  }
+  .text-danger {
+    color: rgb(245, 189, 189) !important;
+  }

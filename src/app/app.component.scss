@@ -1,0 +1,122 @@
+.theme-toggle {
+    padding: 10px 10px 5px;
+    background: var(--themeBGSecondary);
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 1rem;
+  }
+  .theme-toggle:hover {
+    background: #e6b800;
+  }
+  .btn-container {
+    display: flex;
+    position: fixed;
+    top: 5px;
+    right: 10px;
+    z-index: 3;
+    align-items: center;
+  }
+  .btn-resume {
+    background: var(--themeBGSecondary);
+    padding: 10px 10px;
+    text-decoration: none;
+    color: #333;
+    // font-weight: bold;
+    border-radius: 5px;
+    display: flex;
+    transition: transform 0.3s;
+    font-weight: bold;
+    border: none;
+  }
+
+
+  // Mobile Responsiveness
+@media (max-width: 768px) {
+
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  .reveal-text {
+    font-size: 1.2rem;
+  }
+  
+  .btn-resume {
+    padding: 10px 10px 5px;
+    background: var(--themeBGSecondary);
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    z-index: 3;
+  }
+}
+// footer {
+//       background: lightgray;
+//       position: fixed;
+//       bottom: 0;
+//       width: 100%;
+// }
+// .foot-cont {
+//   display: flex;
+//       justify-content: space-around;
+//       align-items: center;
+//       color: black;
+//       p {
+//         margin: 0;
+//       }
+// }
+
+// footer//
+.footer {
+  background: var(--bgGrDark);
+  border-top: 1px dotted var(--themeBGSecondary);
+    color: white;
+    padding: 5px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    p {
+      margin: 0;
+    }
+}
+.foot {
+  display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+.footer a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer .social-links i {
+  font-size: 1.5rem;
+  color: white;
+}
+
+.footer .social-links i:hover {
+  color: var(--themeBGSecondary);
+}
+
+
+/// for left side ////
+// @media (min-width: 768px) {
+//   .footer {
+//     width: 570px;
+//     top: 51%;
+//     transform: rotate(270deg);
+//     display: inline-block;
+//     left: -16.3rem;
+//   }
+//   .foot {
+//     flex-direction: row-reverse;
+//   }
+//   .social-links a {
+//     transform: rotate(90deg);
+//     display: inline-block;
+//   }
+// }

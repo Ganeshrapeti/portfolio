@@ -1,0 +1,15 @@
+<div class="nav-mobile">
+<button class="icon" (click)="toggleMenu()">
+  <mat-icon>{{ menuOpen ? 'cancel' : 'menu' }}</mat-icon>
+</button>
+</div>
+
+<nav [class.open]="menuOpen">
+  <a routerLink="/" routerLinkActive="active" (click)="closeMenu()">Home</a>
+  <a routerLink="/about" routerLinkActive="active" (click)="closeMenu()">About</a>
+  <a routerLink="/tech-stack" routerLinkActive="active" (click)="closeMenu()">Tech-Stack</a>
+  <a routerLink="/projects" routerLinkActive="active" (click)="closeMenu()">Projects</a>
+  <a routerLink="/contact" routerLinkActive="active" (click)="closeMenu()">Contact</a>
+  <span>
+  </span>
+</nav>

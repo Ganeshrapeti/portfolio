@@ -1,0 +1,15 @@
+<section class="skills-section">
+    <h2>Technical Skills</h2>
+    <div class="tiles-container">
+      <div  class="tile pl-0" *ngFor="let skill of skills" [@fadeIn]>
+        <div class="d-flex">
+          <img class="card-img" [src]="skill.img" alt="{{skill.title}}">
+        <p class="text-title">{{ skill.title }} </p>
+        </div>
+          <p class="text-des">{{ skill.description }}</p>
+      </div>
+    </div>
+  </section>
+
+
+  

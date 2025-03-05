@@ -1,1 +1,131 @@
 /* You can add global styles to this file, and also import other style files */
+@use '@angular/material' as mat;
+:root {
+  --themeBGLight: #f4f4f4;
+  --themeBGDark: #1e1e1e;
+  --colorTextLight: #ffffff;
+  --colorTextDark: #333;
+  --themeBGSecondary: #ffcc00;
+  --bgGreenLight: #4c826d87;
+  --darkBG: rgba(0, 0, 0, 0.52);
+  --bgGrDark: #4c826d87;
+  
+  // @include mat.form-field-overrides((
+  // mdc-text-field--outlined:not(mdc-text-field--disabled) mdc-text-field--invalid mdc-floating-label
+  // mdc-text-field--outlined:not(mdc-text-field--disabled) mdc-text-field__input 
+  // color: rgb(0, 255, 21)
+  // ))
+}
+
+//colours //
+// blue dark -- #1d509b
+// blue light -- #274268f0
+body {
+  font-family: Arial, sans-serif;
+  font-family: "Prompt", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+  background-color: var(--bgGreenLight);
+  color: var(--colorTextDark);
+  transition: background 0.3s, color 0.3s;
+  background: linear-gradient(to right, #1f4037, #99f2c8);
+}
+
+h2 {
+  color: var(--themeBGSecondary);
+  text-decoration: underline;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.dark-mode {
+  background-color: var(--themeBGDark);
+  color: var(colorTextLight);
+  background: linear-gradient(to right, #282928, #3e474352);
+
+  nav, .footer {
+    background: linear-gradient(to right, #555756, #545b57) !important;
+  }
+
+  .tile,
+  .content, .card {
+    background: var(--darkBG) !important;
+    // box-shadow: 0px 4px 6px rgba(245, 228, 228, 0.1) !important;
+    color: var(--colorTextLight);
+  }
+  .card {
+    padding: 1rem;
+  }
+  @media (max-width: 600px) {
+    .nav-mobile {
+      background: #485854  !important;
+    }
+  }
+}
+
+/* From Uiverse.io by adamgiebl */
+.btn-global {
+  position: relative;
+  display: inline-block;
+  // margin: 15px;
+  padding: 15px 30px;
+  text-align: center;
+  font-size: 18px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: var(--colorTextDark);
+  background: var(--themeBGSecondary);
+  cursor: pointer;
+  transition: ease-out 0.5s;
+  // border: 2px solid #725AC1;
+  // border-radius: 10px;
+  box-shadow: inset 0 0 0 0 var(--themeBGDark);
+  font-weight: bold;
+  font-style: italic;
+}
+
+.btn-global:hover {
+  color: white;
+  box-shadow: inset 300px 0 0 0 var(--themeBGDark);
+}
+
+.btn-global:active {
+  transform: scale(0.9);
+}
+
+.ismobile {
+  display: none;
+}
+
+.big {
+  display: block;
+}
+
+// Mobile Responsiveness
+@media (max-width: 768px) {
+  .ismobile {
+    display: block;
+  }
+
+  .big {
+    display: none;
+  }
+
+  .icon {
+    padding: 10px 10px 5px;
+    background: var(--themeBGSecondary);
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    z-index: 3;
+  }
+  .field-container {
+    flex-wrap: wrap;
+  }
+}
+
+
