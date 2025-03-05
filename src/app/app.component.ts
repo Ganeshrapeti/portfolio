@@ -12,7 +12,7 @@ import { MatTooltipModule } from '@angular/material/tooltip';
 })
 export class AppComponent {
   isDarkMode = false;
-  title = 'Udemy_Ang';
+  title = 'Portfolio';
   toggleTheme() {
     document.body.classList.toggle('dark-mode');
   }
